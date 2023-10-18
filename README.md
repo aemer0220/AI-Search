@@ -16,15 +16,14 @@ This program reads in an input csv file describing a set of cities and then sear
 * -i <STRING>: Specifies the initial city as a String; multi-word city names must be enclosed with quotation marks
 * -g <STRING>: Specifies the goal city as a String; multi-word city names must be enclosed
 * -s <STRING>: Specifies the search strategy to be used; <STRING> should be one of:
-  * a-star: Use the A* search strategy
+  * a-star: Use the A* search strategy (Default if -s is not provided)
   * greedy: Use the greedy best-first search strategy
   * uniform: Use the uniform-cost search strategy
-If the -s argument is not provided, then A* search is used by default.
 * -h <STRING>: Specifies the heuristic function to be used (if applicable); <STRING> should be
 one of:
-  * haversine: Use the Haversine formula
+  * haversine: Use the Haversine formula (Default if -h is not provided)
   * euclidean: Use the Euclidean distance
-If the -h argument is not provided, then the Haversine formula should is by default;
+If the -h argument is not provided, then the Haversine formula is used by default;
 * --no-reached: Disables the use of a reached table in the search algorithm, resulting in a search with redundant paths (including cycles). If this argument is not provided,
-then the search algorithm should use a reached table for removing redundant paths.
-* -v <INTEGER>: Specifies a verbosity level indicating how much output the program should produce; default is 0 
+then the search algorithm uses a reached table for removing redundant paths.
+* -v <INTEGER>: Specifies a verbosity level (0-3) indicating how much output the program should produce (Default is 0 if -v is not provided)
