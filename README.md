@@ -1,5 +1,5 @@
 # AI-Search
-This program reads in an input csv file describing a set of cities and then searches for paths between two user-specified cities using various search strategies (Uninformed and Informed)
+This program reads in an input csv file describing a set of cities and then searches for paths between two user-specified cities using various search strategies (Uninformed and Informed). Example CSV files are provided within the source code.
 
 ### How to run from the Command Prompt (terminal)
 
